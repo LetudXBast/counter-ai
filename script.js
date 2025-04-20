@@ -26,7 +26,7 @@ function resumerAvecMistral() {
   loading.style.display = 'block';
   loading.textContent = 'Résumé en cours...';
 
-  fetch('https://letter-counter-api.onrender.com/api/llm-summary', {
+  fetch('https://counter-ai.onrender.com/api/llm-summary', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ texte: paragraphe })
