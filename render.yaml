@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: letter-counter-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    plan: free
+    envVars:
+      - key: MISTRAL_API_KEY
+        sync: false  # Elle sera ajoutée manuellement dans l'interface

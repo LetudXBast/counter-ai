@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Compteur de lettres</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Compteur de lettres</h1>
+  <input type="text" id="texteInput" placeholder="Écris un texte ici...">
+  <button onclick="compterLettres()">Compter</button>
+  <p id="resultat"></p>
+  <script src="script.js"></script>
+
+  <!-- Partie 3 : Résumé IA avec Mistral -->
+  <h2>Résumé IA (Mistral)</h2>
+
+  <textarea id="texteMistral" rows="5" cols="50" placeholder="Colle ton paragraphe ici..."></textarea><br>
+  <button onclick="resumerAvecMistral()">Résumé par IA</button>
+
+  <p id="loadingMistral" style="display: none; font-style: italic;">Chargement du résumé...</p>
+  <p id="resumeMistral"></p>
+
+</body>
+</html>
